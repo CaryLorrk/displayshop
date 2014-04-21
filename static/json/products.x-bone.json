@@ -1,0 +1,137 @@
+[
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "X-Bone"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KXB-6-20"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "20CM X-BONE", 
+                    "Weight: 2.1kg", 
+                    "Fold: 11.5cm L x 7.5cm W x 58cm H", 
+                    "Unfold: 120cm L x 60cm W x 20cm H"
+                ]
+            }
+        ], 
+        "id": "KXB-6-20", 
+        "title": "KUPO Display KXB-6-20"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "X-Bone"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KXB-6-40"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "40CM X-BONE", 
+                    "Weight: 2.9kg", 
+                    "Fold: 11.5cm L x 7.5cm W x 68cm H", 
+                    "Unfold: 120cm L x 60cm W x 40cm H"
+                ]
+            }
+        ], 
+        "id": "KXB-6-40", 
+        "title": "KUPO Display KXB-6-40"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "X-Bone"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KXB-6-60"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "60CM X-BONE", 
+                    "Weight: 3.5kg", 
+                    "Fold: 11.5cm L x 7.5cm W x 81cm H", 
+                    "Unfold: 120cm L x 60cm W x 60cm H"
+                ]
+            }
+        ], 
+        "id": "KXB-6-60", 
+        "title": "KUPO Display KXB-6-60"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "X-Bone"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KXB-6-80"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "80CM X-BONE", 
+                    "Weight: 4.7kg", 
+                    "Fold: 11.5cm L x 7.5cm W x 96.5cm H", 
+                    "Unfold: 120cm L x 60cm W x 80cm H"
+                ]
+            }
+        ], 
+        "id": "KXB-6-80", 
+        "title": "KUPO Display KXB-6-80"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "X-Bone"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KXB-6-100"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "100CM X-BONE", 
+                    "Weight: 5.1kg", 
+                    "Fold: 11.5cm L x 7.5cm W x 148cm H", 
+                    "Unfold: 120cm L x 60cm W x 100cm H"
+                ]
+            }
+        ], 
+        "id": "KXB-6-100", 
+        "title": "KUPO Display KXB-6-100"
+    }
+]

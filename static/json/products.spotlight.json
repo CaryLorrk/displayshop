@@ -1,0 +1,59 @@
+[
+    {
+        "id": "KD-SL02P",
+        "title": "KUPO Display KD-SL02P",
+        "dl": [
+            {
+                "dt": "Group",
+                "dd": [
+                    "Spotlight"
+                ]
+            },
+            {
+                "dt": "Item no.",
+                "dd": [
+                    "KD-SL02P"
+                ]
+            },
+            {
+                "dt": "Description",
+                "dd": [
+                    "Spot Light (Pica-pica)",
+                    "Mounting on KCP-700, KD-900, KD-C05 or KD-PR100"
+                ]
+            },
+            {
+                 "dt": "Weight",
+                 "dd": [
+                     "2.5kg"
+                 ]
+            }
+        ],
+        "detail": [
+        "<p>Spot Light<br>",
+            "Emitting ultra high color temperature up to 6000K that is much higher than most halogen lamps.</p>",
+        "<p>",
+        "    <ul class=\"list-unstyled\">",
+        "        <li>Lamp: HID 32W</li>",
+        "        <li>Socket: GU10 </li>",
+        "        <li>Beam angle: 24° and 60°</li>",
+        "        <li>Life time: 2000hrs</li>",
+        "        <li>Material: Stainless steel </li>",
+        "        <li>Available color: Polish</li>",
+        "    </ul>",
+        "</p>",
+        "<p>Feature:</p>",
+        "<ol>",
+        "    <li>Low power consumption</li>",
+        "    <li>Low heat generation</li>",
+        "    <li>Easy operation</li>",
+        "    <li>Application in any indoor space</li>",
+        "</ol>",
+        "<p>Power Supply:</p>",
+        "<ol>",
+        "    <li>Voltage 120V, 50-60Hz</li>",
+        "    <li>Voltage 230V, 50-60Hz</li>",
+        "</ol>"
+        ]
+    }
+]

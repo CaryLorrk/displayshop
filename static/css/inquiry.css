@@ -1,0 +1,27 @@
+#content {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+#form-container {
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+#form-inner {
+  margin: 0 10px;
+}
+
+#table-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#table-container table {
+  width: 100%;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow:scroll;
+}

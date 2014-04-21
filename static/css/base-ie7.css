@@ -1,0 +1,8 @@
+.lightbox .modal-dialog{
+    width: auto;
+    max-width: 95%;
+    overflow-y: auto;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}

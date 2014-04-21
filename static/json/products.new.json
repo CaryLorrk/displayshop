@@ -1,0 +1,50 @@
+[
+    {
+        "id": "KD-500P",
+        "group": "kupole.500",
+        "title": "KUPO Display KD-500P",
+        "caption": "KD-500P<br>Aluminum Slat Panel"
+    },
+    {
+        "id": "KD-817P",
+        "group": "kupole.800",
+        "title": "KUPO Display KD-817P",
+        "caption": "KD-817P<br>Screen Holder"
+    },
+    {
+        "id": "KD-851S",
+        "group": "kupole.800",
+        "title": "KUPO Display KD-851S",
+        "caption": "KD-851S<br>Mirror Frame"
+    },
+    {
+        "id": "KD-932P",
+        "group": "kupole.900",
+        "title": "KUPO Display KD-932P",
+        "caption": "KD-932P<br>Wheel Holder"
+    },
+    {
+        "id": "KD-934P",
+        "group": "kupole.900",
+        "title": "KUPO Display KD-934P",
+        "caption": "KD-934P<br>Vertical Bicycle Fixture"
+    },
+    {
+        "id": "KD-963P",
+        "group": "kupole.900",
+        "title": "KUPO Display KD-963P",
+        "caption": "KD-963P<br>Bi-Faceout"
+    },
+    {
+        "id": "KD-965P",
+        "group": "kupole.900",
+        "title": "KUPO Display KD-965P",
+        "caption": "KD-965P<br>Spiral Hanger"
+    },
+    {
+        "id": "KD-R46P",
+        "group": "kupole.others",
+        "title": "KUPO Display KD-R46P",
+        "caption": "KD-R46P<br>Kupole Ceiling Mount"
+    }
+]

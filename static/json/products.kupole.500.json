@@ -1,0 +1,112 @@
+[
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-500P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Aluminum Slat Panel", 
+                    "120cmW x 60cmL x 2cmT", 
+                    "Mounting on 4 KD-900, 4 KD-C05 or 4 KD-PR100, Available in silver"
+                ]
+            }
+        ], 
+        "id": "KD-500P", 
+        "title": "KUPO Display KD-500P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-501P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Poster Holder", 
+                    "(w/o panel, poster)", 
+                    "Set of 4", 
+                    "4.5cm L x 3cm W x 2cm T", 
+                    "with M6 Knob", 
+                    "Mounting on KD-500P"
+                ]
+            }
+        ], 
+        "id": "KD-501P", 
+        "title": "KUPO Display KD-501P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-502P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Shoe Panel", 
+                    "with M6 Knob", 
+                    "Adjustable Angle: 15, 30", 
+                    "or 180 degree", 
+                    "Mounting on KD-500P"
+                ]
+            }
+        ], 
+        "id": "KD-502P", 
+        "title": "KUPO Display KD-502P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-503P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Display Shelf", 
+                    "45cm W x 30cm D", 
+                    "with M6 Knob", 
+                    "Mounting on KD-500P"
+                ]
+            }
+        ], 
+        "id": "KD-503P", 
+        "title": "KUPO Display KD-503P"
+    }
+]

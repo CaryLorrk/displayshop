@@ -1,0 +1,42 @@
+[
+    {
+        "head": "2014 Show Schedule",
+        "body": [
+            {
+                "event": "Euro Shop",
+                "location": "Dusseldorf, Germany",
+                "date": "2/16-2/20",
+                "note": "Hall 5 / C12",
+                "link": "http://www.euroshop-tradefair.com/"
+            },
+            {
+                "event": "Global Shop",
+                "location": "Chicago, IL, US",
+                "date": "3/18-3/20",
+                "note": "visit",
+                "link": "http://www.globalshop.org/"
+            },
+            {
+                "event": "Expo Shop",
+                "location": "ShangHai, China",
+                "date": "3/31-4/3",
+                "note": "Hall E5 / C17",
+                "link": "http://www.exposhop.com.cn/Home/tabid/3418/language/en-US/Default.aspx"
+            },
+            {
+                "event": "APPEXPO",
+                "location": "ShangHai, China",
+                "date": "7/3-7/6",
+                "note": "",
+                "link": "http://www.apppexpo.com/index/2/en"
+            },
+            {
+                "event": "Store Asia Expo",
+                "location": "Philippines",
+                "date": "August",
+                "note": "",
+                "link": "http://www.philretailers.com/index.php?option=com_content&view=article&id=17&Itemid=16"
+            }
+        ]
+    }
+]

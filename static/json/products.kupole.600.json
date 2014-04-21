@@ -1,0 +1,189 @@
+[
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-600P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Vivi-Ring with M10 Female Thread", 
+                    "Clamp tube from DIA. 40mm to 45mm", 
+                    "Rotating clamp with 4 M10 holes"
+                ]
+            }
+        ], 
+        "id": "KD-600P", 
+        "title": "KUPO Display KD-600P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-601P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Vivi-Ring with M6 Female Thread ", 
+                    "Clamp tube from DIA. 40mm to 45mm", 
+                    "Rotating clamp with 8 M6 holes"
+                ]
+            }
+        ], 
+        "id": "KD-601P", 
+        "title": "KUPO Display KD-601P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-602P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Vivi-Ring with Hanger Rod ", 
+                    "Clamp tube from DIA. 40mm to 45mm", 
+                    "Rotating clamp with 4 screwed rods", 
+                    "Rod size: DIA.1.4cm, Length: 25.6cm"
+                ]
+            }
+        ], 
+        "id": "KD-602P", 
+        "title": "KUPO Display KD-602P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-603P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Vivi-Ring with Slim Rod ", 
+                    "Clamp tube from DIA. 40mm to 45mm", 
+                    "Rotating clamp with 8 screwed rods", 
+                    "Rod size: DIA.0.6cm, Lenght: 20.6cm"
+                ]
+            }
+        ], 
+        "id": "KD-603P", 
+        "title": "KUPO Display KD-603P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-604P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Bicycle Helmet Holder", 
+                    "Vivi-ring with 4 rods and 4 clear acrylic", 
+                    "Rod size: DIA.1.4cm, 10cm L", 
+                    "Acrylic size: 25cm L x 8cm W x 12cm H"
+                ]
+            }
+        ], 
+        "id": "KD-604P", 
+        "title": "KUPO Display KD-604P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-650W"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Kupole Round Table", 
+                    "DIA.60cm", 
+                    "Maximum weight load 20kg", 
+                    "White board with polished hardware"
+                ]
+            }
+        ], 
+        "id": "KD-650W", 
+        "title": "KUPO Display KD-650W"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kupole System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-655P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Holding Ring For KD-650W", 
+                    "Clamp tubes from DIA. 40mm to 45mm", 
+                    "with 3 M6 screws", 
+                    "Accept material: 1cm up to 2.5cm thick"
+                ]
+            }
+        ], 
+        "id": "KD-655P", 
+        "title": "KUPO Display KD-655P"
+    }
+]

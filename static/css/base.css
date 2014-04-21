@@ -1,0 +1,89 @@
+body {
+    position: relative;
+    background-color: #E5E5E5;
+}
+
+/* Narbar setting */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Change the brand */
+.navbar-inverse .navbar-brand {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#content .tab-content {
+    margin-top: 20px;
+}
+
+
+/* Jumbotron setting */
+.jumbotron {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.jumbotron img {
+    z-index: -1;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(242,242,242);
+}
+
+/* Lightbox setting */
+.lightbox {
+    text-align: center;
+}
+
+.lightbox .modal-dialog {
+    width: auto;
+    max-width: 95%;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+.lightbox .modal-body .close {
+    position: absolute;
+    z-index: 10;
+}
+
+.lightbox img {
+    max-width: 100%;
+}
+
+/* glyphicon */
+.glyphicons-lg {
+    font-size: 32px;
+    border-radius: 6px;
+}
+
+.caption {
+    text-align: center;
+}
+
+.page-fade {
+    width: 100%;
+}
+
+#toTop {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+
+#toTop button {
+  padding: 0;
+  margin: 2px;
+  color: gray;
+}

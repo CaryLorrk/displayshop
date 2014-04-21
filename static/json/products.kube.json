@@ -1,0 +1,192 @@
+[
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K01BL"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Kube", 
+                    "44.5cm W x 40cm D x 43cm H", 
+                    "Includes KD-K40, KD-K4037 and KD-K45 in one set", 
+                    "Available in clear and blue"
+                ]
+            }
+        ], 
+        "id": "KD-K01BL", 
+        "title": "KUPO Display KD-K01BL"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K06P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Acrylic Holder", 
+                    "DIA.6.2cm", 
+                    "Mounting on Pillar directly or attaches with KD-900, KD-C05 or KD-PR100"
+                ]
+            }
+        ], 
+        "id": "KD-K06P", 
+        "title": "KUPO Display KD-K06P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K15P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Connecting Bars", 
+                    "Set of 2", 
+                    "Bar: 1.5cm W x 40cm L x 3cm H", 
+                    "Clip: 1.5cm W x 4.5cm H", 
+                    "Used to clamp 2 Kubes in vertical"
+                ]
+            }
+        ], 
+        "id": "KD-K15P", 
+        "title": "KUPO Display KD-K15P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K16P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Kube Base Bars", 
+                    "Set of 2", 
+                    "Bar: 1.5cm W x 40cm L x 3cm H", 
+                    "Clip: 1.5cm W x 3.8cm H"
+                ]
+            }
+        ], 
+        "id": "KD-K16P", 
+        "title": "KUPO Display KD-K16P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K40BL / K60BL"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Acrylic Curved Shelf", 
+                    "Set of 2, 0.8cm thick", 
+                    "Available in clear and blue", 
+                    "KD-K40BL: 40cm W x 40cm D x 19.6cm H", 
+                    "KD-K60BL: 60cm W x 40cm D x 19.6cm H"
+                ]
+            }
+        ], 
+        "id": "KD-K40BL", 
+        "title": "KUPO Display KD-K40BL / K60BL"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K45P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Bar with 8 Channels", 
+                    "Set of 2", 
+                    "DIA.4.5cm, 40cm L", 
+                    "Accepts material up to 0.8cm thick"
+                ]
+            }
+        ], 
+        "id": "KD-K45P", 
+        "title": "KUPO Display KD-K45P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Kube System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-K4037BL / K6037BL"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Acrylic Shelf", 
+                    "Available in clear and blue", 
+                    "KD-K4037BL: 40cm W x 37cm L x 0.8cm T", 
+                    "KD-K6037BL: 40cm W x 57cm L x 0.8cm T"
+                ]
+            }
+        ], 
+        "id": "KD-K4037BL", 
+        "title": "KUPO Display KD-K4037BL / K6037BL"
+    }
+]

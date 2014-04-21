@@ -1,0 +1,188 @@
+[
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C01P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Curved Clamp", 
+                    "Fits with Span Tube", 
+                    "Available in silver and black"
+                ]
+            }
+        ], 
+        "id": "KD-C01P", 
+        "title": "KUPO Display KD-C01P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C02P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "2 Way Joint ", 
+                    "Fits with Span Tube", 
+                    "Available in silver and black"
+                ]
+            }
+        ], 
+        "id": "KD-C02P", 
+        "title": "KUPO Display KD-C02P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C03P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Joint with Screw", 
+                    "Fits with Span Tube and attaches to KD-C01 ", 
+                    "or KD-C02 for more application", 
+                    "Available in silver and black"
+                ]
+            }
+        ], 
+        "id": "KD-C03P", 
+        "title": "KUPO Display KD-C03P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C04P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Variable Angle Joint ", 
+                    "Fits with Span Tube", 
+                    "Available in silver and black"
+                ]
+            }
+        ], 
+        "id": "KD-C04P", 
+        "title": "KUPO Display KD-C04P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C05P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Mini Dount", 
+                    "Clamp tubes from DIA.30cm to 35cm", 
+                    "Attaches up to 3 accessories to tube", 
+                    "Available in polish and black"
+                ]
+            }
+        ], 
+        "id": "KD-C05P", 
+        "title": "KUPO Display KD-C05P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C07P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Foot Adapter", 
+                    "Inserts into Span Tube to attaches caster"
+                ]
+            }
+        ], 
+        "id": "KD-C07P", 
+        "title": "KUPO Display KD-C07P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Super Joint System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-C0500P / C1000P / C1500P / C2000P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Span Tube", 
+                    "DIA.3.5cm", 
+                    "KD-C0500P: 50cm L", 
+                    "KD-C1000P: 100cm L", 
+                    "KD-C1500P: 150cm L", 
+                    "KD-C2000P: 200cm L"
+                ]
+            }
+        ], 
+        "id": "KD-C0500P", 
+        "title": "KUPO Display KD-C0500P / C1000P / C1500P / C2000P"
+    }
+]

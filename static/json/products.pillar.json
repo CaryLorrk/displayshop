@@ -1,0 +1,270 @@
+[
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR2137P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Pillar", 
+                    "Height extends from 210cm to 370cm", 
+                    "Upper section: 4cm x 4cm", 
+                    "Lower section: 6.4cm x 6.4cm"
+                ]
+            }
+        ], 
+        "id": "KD-PR2137P", 
+        "title": "KUPO Display KD-PR2137P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR24LP"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Pillar 4 Way Tube", 
+                    "240cm Height", 
+                    "6.4cm W x 6.4cm D", 
+                    "Includes plastic final on top"
+                ]
+            }
+        ], 
+        "id": "KD-PR24LP", 
+        "title": "KUPO Display KD-PR24LP"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR24SP"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Pillar 4 Way Tube", 
+                    "240cm Height", 
+                    "4cm W x 4cm D", 
+                    "Includes plastic final on top"
+                ]
+            }
+        ], 
+        "id": "KD-PR24SP", 
+        "title": "KUPO Display KD-PR24SP"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR30LP / MP / QP"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Square Crossbar", 
+                    "3cm square", 
+                    "Requires 2 KD-900, 2 KD-C05 or 2 KD-PR100", 
+                    "KD-PR30LP:105cm to 108cm, Max. load 15kg", 
+                    "KD-PR30MP: 80cm to 83cm, Max. load 20kg", 
+                    "KD-PR30LP:61cm to 64cm, Max. load 20kg"
+                ]
+            }
+        ], 
+        "id": "KD-PR30LP", 
+        "title": "KUPO Display KD-PR30LP / MP / QP"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR31P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Square Faceout", 
+                    "30.5cm L x 3cm Square", 
+                    "Mounting on KD-900, KD-C05 or KD-PR100"
+                ]
+            }
+        ], 
+        "id": "KD-PR31P", 
+        "title": "KUPO Display KD-PR31P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR48P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Pillar Base Square", 
+                    "48cm Square", 
+                    "Base for KD-PR24LP or KD-PR24SP"
+                ]
+            }
+        ], 
+        "id": "KD-PR48P", 
+        "title": "KUPO Display KD-PR48P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR50P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Pillar Wall Mount", 
+                    "Set of 2", 
+                    "25.5cm L", 
+                    "Mounting on KD-900, KD-C05 or KD-PR100 to wall"
+                ]
+            }
+        ], 
+        "id": "KD-PR50P", 
+        "title": "KUPO Display KD-PR50P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR100P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Rock", 
+                    "Removable joint", 
+                    "Attach accessories to Pillar"
+                ]
+            }
+        ], 
+        "id": "KD-PR100P", 
+        "title": "KUPO Display KD-PR100P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR910P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "Pillar Rotating Adapter", 
+                    "Mounting on Pillar to attach panels or shelves", 
+                    "Accepts material up to 0.8cm thick"
+                ]
+            }
+        ], 
+        "id": "KD-PR910P", 
+        "title": "KUPO Display KD-PR910P"
+    }, 
+    {
+        "dl": [
+            {
+                "dt": "Group", 
+                "dd": [
+                    "Pillar System"
+                ]
+            }, 
+            {
+                "dt": "Item no.", 
+                "dd": [
+                    "KD-PR990P"
+                ]
+            }, 
+            {
+                "dt": "Description", 
+                "dd": [
+                    "L Bracket Shelf Holder", 
+                    "Set of 2", 
+                    "15cm W x 2.5cm D x 2cm H", 
+                    "Mounting on KD-PR100"
+                ]
+            }
+        ], 
+        "id": "KD-PR990P", 
+        "title": "KUPO Display KD-PR990P"
+    }
+]

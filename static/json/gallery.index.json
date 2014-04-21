@@ -1,0 +1,60 @@
+[
+    {
+        "id": "Projects",
+        "subjects": [
+            {
+                "id": "beauty-salon",
+                "text": "Beauty Salon"
+            },
+            {
+                "id": "bike-shop",
+                "text": "Bike Shop"
+            },
+            {
+                "id": "boutique",
+                "text": "Boutique"
+            },
+            {
+                "id": "clothing-store",
+                "text": "Clothing Store"
+            },
+            {
+                "id": "promotion-kit",
+                "text": "Promotion Kit"
+            },
+            {
+                "id": "others",
+                "text": "Others"
+            }
+        ]
+    },
+    {
+        "id": "Sketches",
+        "subjects": [
+            {
+                "id": "kupole-system",
+                "text": "Kupole System"
+            },
+            {
+                "id": "bike-fixture",
+                "text": "Bike Fixture"
+            },
+            {
+                "id": "pillar-system",
+                "text": "Pillar System"
+            },
+            {
+                "id": "super-joint-system",
+                "text": "Super Joint System"
+            },
+            {
+                "id": "kube-system",
+                "text": "Kube System"
+            },
+            {
+                "id": "x-bone",
+                "text": "X-Bone"
+            }
+        ]
+    }
+]
