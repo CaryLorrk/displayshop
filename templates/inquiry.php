@@ -12,7 +12,7 @@
           <label for="name" class="col-sm-2 control-label"><span popover="required" popover-trigger="mouseenter" class="text-danger">*&nbsp;</span>Name</label>
           <div class="col-sm-4">
             <div ng-class="{'has-error': form.name.$invalid && submitted,
-                            'has-warning': form.name.$invalid && form.name.$dirty}">
+              'has-warning': form.name.$invalid && form.name.$dirty}">
               <input type="text" ng-model="inputs.name.content" class="form-control" id="name" name="name" placeholder="Name (required)" required>
               <span class="help-block" ng-show="form.name.$error.required && (form.name.$dirty || submitted)">Name is required.</span>
             </div>
@@ -22,7 +22,7 @@
           <label for="email" class="col-sm-2 control-label"><span popover="required" popover-trigger="mouseenter" class="text-danger">*&nbsp;</span>E-Mail</label>
           <div class="col-sm-4">
             <div ng-class="{'has-error': form.email.$invalid && submitted,
-                            'has-warning': form.email.$invalid && form.email.$dirty}">
+              'has-warning': form.email.$invalid && form.email.$dirty}">
               <input type="email" ng-model="inputs.email.content" class="form-control" id="email" name="email" placeholder="E-Mail (required)" required>
               <span class="help-block" ng-show="form.email.$error.required && (form.email.$dirty || submitted)">E-mail is required.</span>
               <span class="help-block" ng-show="form.email.$error.email && (form.email.$dirty || submitted)">This is not a valid e-mail.</span>
@@ -87,8 +87,8 @@
             <div class="row">
               <div class="col-sm-12">
                 <input id="professionOther" class="form-control" type="text" ng-model="profession.other" placeholder="Other">
-            </div>
               </div>
+            </div>
           </div>
           <label for="specially" class="col-sm-2 control-label">Area of specially</label>
           <div id="specially" class="col-sm-4">
@@ -114,13 +114,9 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="comment" class="col-sm-2 control-label"><span popover="required" popover-trigger="mouseenter" class="text-danger">*&nbsp;</span>Comment</label>
+          <label for="comment" class="col-sm-2 control-label">Comment</label>
           <div class="col-sm-10">
-            <div ng-class="{'has-error': form.comment.$invalid && submitted,
-                            'has-warning': form.comment.$invalid && form.comment.$dirty}">
-              <textarea id="comment" name="comment" class="form-control" cols="30" rows="5" ng-model="inputs.comment.content" placeholder="Comment (required)" required></textarea>
-              <span class="help-block" ng-show="form.comment.$error.required && (form.comment.$dirty || submitted)">Comment is required.</span>
-            </div>
+            <textarea id="comment" name="comment" class="form-control" cols="30" rows="5" ng-model="inputs.comment.content" placeholder="Comment"></textarea>
           </div>
         </div>
         <div class="form-group">
@@ -129,17 +125,20 @@
           <div class="col-sm-4">
             <div class="row">
               <div class="col-sm-12">
-	<button class="btn btn-link" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"><span class="glyphicon glyphicon-refresh"></span>[ Different Image ]</a>
+                <button class="btn btn-link" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"><span class="glyphicon glyphicon-refresh"></span>[ Different Image ]</button>
               </div>
             </div>
-            <div class="div">
-              <div class="col-sm-12">
+            <div class="row">
+              <div class="col-xs-11">
                 <div ng-class="{'has-error': (form.captcha.$invalid && submitted) || wrong_captcha,
-                                'has-warning': form.captcha.$invalid && form.captcha.$dirty}">
+                  'has-warning': form.captcha.$invalid && form.captcha.$dirty}">
                   <input type="text" ng-model="inputs.captcha.content" class="form-control" name="captcha" placeholder="Type the text (required)" autocomplete="off" ng-change="check_captcha()" required>
                   <span class="help-block" ng-show="form.captcha.$error.required && (form.captcha.$dirty || submitted)">Security code is required.</span>
                   <span class="help-block" ng-show="!form.captcha.$error.required && wrong_captcha && (form.captcha.$dirty || submitted)">Security code is wrong.</span>
                 </div>
+              </div>
+              <div class="col-xs-1" style="padding: 0;">
+                <img ng-show="checking()" src="static/img/loading.gif" style="height: 30px;">
               </div>
             </div>
           </div>

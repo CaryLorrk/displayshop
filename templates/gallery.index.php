@@ -5,7 +5,7 @@ function gallery_index_subjects($id, $text)
   $format = '
     <div class="col-sm-4">
       <div class="thumbnail">
-        <a ui-sref="gallery.list({tab: \'%1$s\'})">
+        <a href="javascript:;" ng-click="changeState(\'gallery-ui-view\', \'gallery.list\', {tab: \'%1$s\'})">
           <img src="static/img/thumbnails/%1$s.jpg" title="%2$s" id=%1$s>
         </a>
         <div class="caption">

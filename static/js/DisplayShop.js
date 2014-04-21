@@ -14,22 +14,8 @@ angular.module("DisplayShop", [
 .animation('.page-fade', function() {
     return {
         enter: function(element, done) {
-            var pos = element.css('position');
-            element.css('position', 'absolute');
             element.css('opacity', 0);
-            $(element).animate({opacity: 1}, 500, function() {
-                element.css('position', pos);
-                done();
-            });
-        },
-        leave: function(element, done) {
-            var pos = element.css('position');
-            element.css('position', 'relative');
-            element.css('opacity', 1);
-            $(element).animate({opacity: 0}, 500, function() {
-                element.css('position', pos);
-                done();
-            });
+            $(element).animate({opacity: 1}, 300, done);
         }
     };
 })
@@ -126,7 +112,12 @@ angular.module("DisplayShop", [
     $scope.idx = idx;
     $scope.path = [];
     $scope.loadimg = function(idx) {
-        $scope.path[idx] = "static/img/normal/" + $scope.items[idx].id + ".jpg";
+        if (idx >= 0 || idx < $scope.items.length) {
+            if ($scope.items[idx]) {
+                $scope.path[idx] = "static/img/normal/" + 
+                    $scope.items[idx].id + ".jpg";
+            }
+        }
     };
     $scope.previous = function() {
         if ($scope.idx > 0) {
@@ -136,6 +127,7 @@ angular.module("DisplayShop", [
                 $scope.$apply(function() {
                     $scope.idx--;
                     $scope.loadimg($scope.idx);
+                    $scope.loadimg($scope.idx-1);
                 });
             });
         }
@@ -148,6 +140,7 @@ angular.module("DisplayShop", [
                 $scope.$apply(function() {
                     $scope.idx++;
                     $scope.loadimg($scope.idx);
+                    $scope.loadimg($scope.idx+1);
                 });
             });
         }
@@ -156,14 +149,58 @@ angular.module("DisplayShop", [
         $modalInstance.dismiss();
     };
     $scope.loadimg($scope.idx);
+    $scope.loadimg($scope.idx+1);
+    $scope.loadimg($scope.idx-1);
 })
-.controller("BaseController", function($scope, $location) {
+.controller("BaseController", function($scope, $location, $rootScope) {
+    $scope.preloadimg = {};
+    $scope.preload = {
+        'home': [
+            "static/img/jumbtorn-home.jpg"
+        ],
+        'about': [
+            "static/img/jumbtorn-about.jpg"
+        ],
+        'products': [
+            "static/img/jumbtorn-products.jpg"
+        ],    
+        'gallery': [
+            "static/img/jumbtorn-gallery.jpg"
+        ],
+        'news': [
+            "static/img/jumbtorn-news.jpg"
+        ],
+        'inquiry': [
+            "static/img/jumbtorn-inquiry.jpg"
+        ],
+        'contact': [
+            "static/img/jumbtorn-contact.jpg"
+        ]
+    };
     $scope.navCollapsed = true;
     $scope.isActive = function(location) {
         return location === $location.path();
     };
     $scope.toTop = function() {
         $('html, body').animate({ scrollTop: 0 }, 'fast');
+    };
+    $rootScope.changeState = function(id, state, stateParams) {
+        if (!$scope.$state.includes(state, stateParams)) {
+            var i;
+            var src; 
+            if ($scope.preload[state] !== undefined) {
+                for (i = 0; i < $scope.preload[state].length; i++) {
+                   src = $scope.preload[state][i]; 
+                   if ($scope.preloadimg[src] === undefined) {
+                       $scope.preloadimg[src] = new Image();
+                       $scope.preloadimg[src].src = src;
+                   }
+                }
+            }
+            $("#"+id).animate({opacity: 0}, 300, function() {
+                $scope.$state.go(state, stateParams);
+            });
+        }
     };
 })
 .controller("AboutController", function($scope) {
@@ -175,6 +212,10 @@ angular.module("DisplayShop", [
         {
             "id": "polestar",
             "text": "Kupo Display (Polestar)"
+        },
+        {
+            "id": "contact",
+            "text": "Contact"
         }
     ];
 })
@@ -268,7 +309,8 @@ angular.module("DisplayShop", [
             $anchorScroll();
             listener();
         });
-        $rootScope.$state.go('products.list', {tab: item.group});
+        $rootScope.changeState('products-ui-view',
+                               'products.list', {tab: item.group});
     };
 })
 .controller("GalleryController", function($scope, $rootScope, $modal) {
@@ -370,8 +412,8 @@ angular.module("DisplayShop", [
         }
     ];
 })
-.controller("InquiryController", function($scope, $http, $location, $anchorScroll) {
-    $scope.state = "success";
+.controller("InquiryController", function($scope, $http,
+                                          $location, $anchorScroll) {
     $scope.join_dict = function(dict) {
         var attr;
         var arr = [];
@@ -383,6 +425,8 @@ angular.module("DisplayShop", [
         return arr.join();
     };
     $scope.reset = function() {
+        $scope.checkId = -1;
+        $scope.nowId = -1;
         $scope.wrong_captcha = false;
         $scope.send = "Send";
         $scope.submitted = false;
@@ -415,6 +459,9 @@ angular.module("DisplayShop", [
             "other":""
         };
     };
+    $scope.checking = function() {
+        return $scope.nowId !== $scope.checkId;
+    };
     $scope.submit = function() {
         $scope.submitted = true;
         if ($scope.form.$invalid) {
@@ -434,22 +481,26 @@ angular.module("DisplayShop", [
                 data: $scope.inputs
             })
             .success(function() {
-                $scope.alert.text = "We have received your inquiry and will contact you soon. Thank you for your interest.";
+                $scope.alert.text = 
+                    "We have received your inquiry and will contact you soon. Thank you for your interest.";
                 $scope.alert.type = "alert-success";
-                document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random();
+                document.getElementById('captcha').src =
+                    'securimage/securimage_show.php?' + Math.random();
                 $scope.send = "Send";
                 $location.hash("content");
                 $anchorScroll();
             })
             .error(function(data, status) {
                 if (status === 402) {
-                    $scope.alert.text = "The Security code is wrong. Please enter the correct text.";
+                    $scope.alert.text =
+                        "The Security code is wrong. Please enter the correct text.";
                     $scope.alert.type = "alert-danger";
                     $scope.wrong_captcha = true;
                     $location.hash("content");
                     $anchorScroll();
                 } else {
-                    $scope.alert.text = "There are some problems with our system. Please contact us by the company information.";
+                    $scope.alert.text =
+                        "There are some problems with our system. Please contact us by the company information.";
                     $scope.alert.type = "alert-danger";
                     $location.hash("content");
                     $anchorScroll();
@@ -459,18 +510,29 @@ angular.module("DisplayShop", [
         }
     };
     $scope.check_captcha = function() {
+        if (!$scope.inputs.captcha.content) {
+            return;
+        }
+        var id = ++$scope.checkId; 
         $http({
             method: "POST",
             url: "index.php/securimage/securimage_ajax",
             data: {
-                'input': $scope.inputs.captcha.content
+                'input': $scope.inputs.captcha.content,
+                'id': id
             }
         })
-        .success(function() {
-            $scope.wrong_captcha = false;
+        .success(function(data) {
+            if (data.id > $scope.nowId) {
+                $scope.nowId = data.id;
+                $scope.wrong_captcha = false;
+            }
         })
-        .error(function() {
-            $scope.wrong_captcha = true;
+        .error(function(data) {
+            if (data.id > $scope.nowId) {
+                $scope.nowId = data.id;
+                $scope.wrong_captcha = true;
+            }
         });
     };
     $scope.reset();

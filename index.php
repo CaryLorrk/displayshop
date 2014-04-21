@@ -17,12 +17,16 @@ function base_view() {
 $app->post('/securimage/securimage_ajax', 'securimage_ajax_view');
 function securimage_ajax_view() {
   $app = Slim::getInstance();
-  $data = json_decode(file_get_contents('php://input'), true);
+  $input = file_get_contents('php://input');
+  $data = json_decode($input, true);
   $securimage = new Securimage();
   $securecode = $securimage->getCode();
+  $response = $app->response(); 
   if (strtolower($securecode) != strtolower($data['input'])) {
-    $app->response()->status(402);
+    $response->status(402);
   }
+  $response['Content-Type'] = 'application/json';
+  $response->body($input);
 }
 
 $app->post('/sendemail', 'sendemail_view');
@@ -75,6 +79,12 @@ $app->get('/about/polestar', 'about_polestar_view');
 function about_polestar_view() {
   $app = Slim::getInstance();
   $app->render('about.polestar.php');
+}
+
+$app->get('/about/contact', 'about_contact_view');
+function about_contact_view() {
+  $app = Slim::getInstance();
+  $app->render('about.contact.php');
 }
 
 $app->get('/products/new', 'product_new_view');

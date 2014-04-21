@@ -12,16 +12,17 @@
           <a href="javascript:;" class="dropdown-toggle">Kupole System<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li ng-repeat="series in kupoles">
-              <a ui-sref="products.list({tab: series.id})">{{series.text}}</a>
+              <a href="javascript:;" ng-click="changeState('products-ui-view', 'products.list', {tab: series.id})">{{series.text}}</a>
+
             </li>
           </ul>
         </li>
         <li ng-repeat="group in groups" ng-class="{active: $state.includes('products.list', {tab: group.id})}">
-          <a ui-sref="products.list({tab: group.id})">{{group.text}}</a>
+          <a href="javascript:;" ng-click="changeState('products-ui-view', 'products.list', {tab: group.id})">{{group.text}}</a>
         </li>
       </ul>
       <div class="tab-content">
-        <div ui-view class="page-fade"></div>
+        <div ui-view class="page-fade" id="products-ui-view"></div>
       </div>
     </div>
   </div>

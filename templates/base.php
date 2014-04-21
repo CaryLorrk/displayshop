@@ -14,6 +14,8 @@
     <!--[if lt IE 9]>
     <script src="static/js/html5shiv.js"></script>
     <script src="static/js/respond.min.js"></script>
+    <script src="static/js/es5-sham.min.js"></script>
+    <script src="static/js/es5-shim.min.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
     <link href="static/css/bootstrap-ie7.css" rel="stylesheet">
@@ -22,6 +24,9 @@
     <script src="static/json2.min.js"></script>
     <link href="static/css/base-ie7.css" rel="stylesheet">
     <![endif]-->
+
+
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -44,39 +49,33 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">POLESTAR</a>
+          <a class="navbar-brand" href="javascript:;" ng-click="changeState('base-ui-view', 'home', {})">POLESTAR</a>
         </div>
         <div class="navbar-collapse" collapse="navCollapsed">
           <ul class="nav navbar-nav navbar-right">
             <li ng-class="{active: $state.includes('home')}" ng-click="navCollapsed = true">
-              <a ui-sref="home"><span class="glyphicon glyphicon-home"></span>Home</a>
+              <a href="javascript:;" ng-click="changeState('base-ui-view', 'home', {})"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
             </li>
             <li ng-class="{active: $state.includes('about')}" ng-click="navCollapsed = true">
-              <a ui-sref="about"><span class="glyphicon glyphicon-user"></span>About</a>
+              <a href="javascript:;" ng-click="changeState('base-ui-view', 'about', {})"><span class="glyphicon glyphicon-user"></span>&nbsp;About</a>
             </li>
             <li ng-class="{active: $state.includes('products')}" ng-click="navCollapsed = true">
-              <a ui-sref="products"><span class="glyphicon glyphicon-shopping-cart"></span>Products</a>
+              <a href="javascript:;" ng-click="changeState('base-ui-view', 'products', {})"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Products</a>
             </li>
             <li ng-class="{active: $state.includes('gallery')}" ng-click="navCollapsed = true">
-              <a ui-sref="gallery"><span class="glyphicon glyphicon-picture"></span>Gallery</a>
+              <a href="javascript:;" ng-click="changeState('base-ui-view', 'gallery', {})"><span class="glyphicon glyphicon-picture"></span>&nbsp;Gallery</a>
             </li>
             <li ng-class="{active: $state.includes('news')}" ng-click="navCollapsed = true">
-              <a ui-sref="news"><span class="glyphicon glyphicon-calendar"></span>News</a>
+              <a  href="javascript:;" ng-click="changeState('base-ui-view', 'news', {})"><span class="glyphicon glyphicon-calendar"></span>&nbsp;News</a>
             </li>
             <li ng-class="{active: $state.includes('inquiry')}" ng-click="navCollapsed = true">
-              <a ui-sref="inquiry"><span class="glyphicon glyphicon-pencil"></span>Inquiry</a>
-            </li>
-            <li ng-class="{active: $state.includes('contact')}" ng-click="navCollapsed = true">
-              <a ui-sref="contact"><span class="glyphicon glyphicon-map-marker"></span>Contact</a>
+              <a href="javascript:;" ng-click="changeState('base-ui-view', 'inquiry', {})"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Inquiry</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <div class="ui-view-container">
-      <div ui-view class="page-fade"></div>
-    </div>
+    <div ui-view class="page-fade" id="base-ui-view"></div>
 
     <div id="toTop">
         <button class="btn btn-link" ng-click="toTop()">back to top</button>

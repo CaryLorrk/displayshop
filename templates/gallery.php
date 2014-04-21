@@ -12,7 +12,7 @@
           <a href="javascript:;" class="dropdown-toggle">Projects<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li ng-repeat="project in projects">
-              <a ui-sref="gallery.list({tab: project.id})">{{project.text}}</a>
+              <a href="javascript:;" ng-click="changeState('gallery-ui-view', 'gallery.list', {tab: project.id})">{{project.text}}</a>
             </li>
           </ul>
         </li>
@@ -20,13 +20,13 @@
           <a href="javascript:;" class="dropdown-toggle">Sketches<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li ng-repeat="sketch in sketches">
-              <a ui-sref="gallery.list({tab: sketch.id})">{{sketch.text}}</a>
+              <a href="javascript:;" ng-click="changeState('gallery-ui-view', 'gallery.list', {tab: sketch.id})">{{sketch.text}}</a>
             </li>
           </ul>
         </li>
       </ul>
       <div class="tab-content">
-        <div ui-view class="page-fade"></div>
+        <div ui-view class="page-fade" id="gallery-ui-view"></div>
       </div>
     </div>
   </div>

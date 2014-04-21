@@ -6,3 +6,10 @@
 .ending {
 	text-align: center;
 }
+
+#about_contact img {
+  float: none;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}

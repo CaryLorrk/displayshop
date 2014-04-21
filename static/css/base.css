@@ -23,7 +23,7 @@ body {
 /* Jumbotron setting */
 .jumbotron {
     position: relative;
-    padding: 0;
+    padding: 0px !important;
     margin: 0;
 }
 
