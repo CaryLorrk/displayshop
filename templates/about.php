@@ -1,6 +1,6 @@
 <div id="about" ng-controller="AboutController">
   <div class="jumbotron">
-    <img src="static/img/jumbotron-about.jpg" alt="jumbotron image">
+    <img src="static/img/jumbotron/jumbotron-about-{{getResponsiveClass()}}.jpg" alt="jumbotron image">
   </div>
   <div id="content">
     <div class="container">

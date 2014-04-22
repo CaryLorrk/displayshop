@@ -171,6 +171,18 @@ angular.module("DisplayShop", [
 })
 .controller("BaseController", function($scope, $location, $rootScope,
                                        $http, $templateCache, $timeout) {
+    $scope.getResponsiveClass = function () {
+        if (window.screen.width < 768) {
+            return "xs";
+        } 
+        if (window.screen.width < 992) {
+            return "sm";
+        } 
+        if (window.screen.width < 1200) {
+            return "md";
+        } 
+        return "lg";
+    };
     $scope.navCollapsed = true;
     $scope.isActive = function(location) {
         return location === $location.path();

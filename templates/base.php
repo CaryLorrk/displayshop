@@ -106,13 +106,12 @@
           }
         }
       }
-      preload(['jumbotron-home.jpg',
-              'loading_page.gif',
-              'jumbotron-about.jpg',
-              'jumbotron-products.jpg',
-              'jumbotron-gallery.jpg',
-              'jumbotron-news.jpg',
-              'jumbotron-inquiry.jpg']);
+      preload(['jumbotron/jumbotron-home-{{getResponsiveClass()}}.jpg',
+              'jumbotron/jumbotron-about-{{getResponsiveClass()}}.jpg',
+              'jumbotron/jumbotron-products-{{getResponsiveClass()}}.jpg',
+              'jumbotron/jumbotron-gallery-{{getResponsiveClass()}}.jpg',
+              'jumbotron/jumbotron-news-{{getResponsiveClass()}}.jpg',
+              'jumbotron/jumbotron-inquiry-{{getResponsiveClass()}}.jpg']);
     </script>
   </body>
 </html>

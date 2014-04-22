@@ -17,7 +17,7 @@
 ?>
 <div id="home">
   <div class="jumbotron">
-    <img src="static/img/jumbotron-home.jpg" alt="jumbotron image">
+    <img src="static/img/jumbotron/jumbotron-home-{{getResponsiveClass()}}.jpg" alt="jumbotron image">
     <div class="container">
       <img src="static/img/kupo-logo.gif" alt="kupo logo">
       <p>A flexible way to make your shop elegant.</p>
