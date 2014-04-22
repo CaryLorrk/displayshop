@@ -88,6 +88,12 @@
       </div>
     </div>
 
+    <img src='static/img/jumbotron/jumbotron-home-{{getResponsiveClass()}}.jpg' class="ng-hide">
+    <img src='static/img/jumbotron/jumbotron-about-{{getResponsiveClass()}}.jpg' class="ng-hide">
+    <img src='static/img/jumbotron/jumbotron-products-{{getResponsiveClass()}}.jpg' class="ng-hide">
+    <img src='static/img/jumbotron/jumbotron-gallery-{{getResponsiveClass()}}.jpg' class="ng-hide">
+    <img src='static/img/jumbotron/jumbotron-news-{{getResponsiveClass()}}.jpg' class="ng-hide">
+    <img src='static/img/jumbotron/jumbotron-inquiry-{{getResponsiveClass()}}.jpg' class="ng-hide">
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/angular.min.js"></script>
     <script src="static/js/angular-animate.min.js"></script>
@@ -95,23 +101,5 @@
     <script src="static/js/ui-bootstrap.min.js"></script>
     <script src="static/js/ui-router.min.js"></script>
     <script src="static/js/DisplayShop.js"></script>
-    <script>
-      function preload(images) {
-        if (document.images) {
-          var i = 0;
-          imageObjs = [];
-          for(i=0; i<=images.length-1; i++) {
-            imageObjs[i] = new Image();
-            imageObjs[i].src="static/img/"+images[i];
-          }
-        }
-      }
-      preload(['jumbotron/jumbotron-home-{{getResponsiveClass()}}.jpg',
-              'jumbotron/jumbotron-about-{{getResponsiveClass()}}.jpg',
-              'jumbotron/jumbotron-products-{{getResponsiveClass()}}.jpg',
-              'jumbotron/jumbotron-gallery-{{getResponsiveClass()}}.jpg',
-              'jumbotron/jumbotron-news-{{getResponsiveClass()}}.jpg',
-              'jumbotron/jumbotron-inquiry-{{getResponsiveClass()}}.jpg']);
-    </script>
   </body>
 </html>

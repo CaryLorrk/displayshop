@@ -54,7 +54,7 @@ function sendemail_view() {
   }
   $message = "$message </table>";
 
-  $to = "carylorrk@gmail.com";
+  $to = "display@kupo.com.tw";
   $subject = 'POLESTAR inquiry from ' . $from;
   if(!mail($to, $subject, wordwrap($message, 70),
     "From: POLESTAR website\nContent-Type: text/html;\n")){

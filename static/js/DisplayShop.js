@@ -194,40 +194,70 @@ angular.module("DisplayShop", [
         var redirection = {
             'about': {
                 url: '/about/group',
-                state: 'about.group'
+                state: 'about.list',
+                stateParams: {
+                    'tab': 'group'
+                }
             },
             'products': {
                 url: '/products/new', 
-                state: 'products.group'
+                state: 'products.list',
+                stateParams: {
+                    'tab': 'new'
+                }
             },
             'gallery': {
                 url: '/gallery/index',
-                state: 'products.group'
+                state: 'products.list',
+                stateParams: {
+                    'tab': 'index'
+                }
             },
             'news': {
                 url: '/news/event',
-                state: 'news.event'
+                state: 'news.list',
+                stateParams: {
+                    'tab': 'event'
+                }
             }
         };
         var stateConfig = $rootScope.$state.get(state);
         var templateUrl = stateConfig.templateUrl(stateParams);
 
         var rState = redirection[state];
-        var rTemplateUrl  = "";
+        var rTemplateUrl = "";
         if (rState !== undefined) {
-            rTemplateUrl = $rootScope.$state.get(rState.state);
+            var rStateConfig = $rootScope.$state.get(rState.state);
+            rTemplateUrl = rStateConfig.templateUrl(rState.stateParams);
         }
         var checkReady = function() {
             $timeout(function() {
-                if ($templateCache.get(templateUrl) === undefined ||
+                if (!$templateCache.get(templateUrl) ||
                     (rState !== undefined &&
-                    $templateCache.get(rTemplateUrl) === undefined)) {
+                    !$templateCache.get(rTemplateUrl))) {
                     checkReady();
                 }
             },50, false);
         };
+        if (!$templateCache.get(templateUrl)) {
+            $http({
+                method: "GET",
+                url: templateUrl
+            })
+            .success(function(data) {
+                $templateCache.put(templateUrl, data);
+            })
+            .error(function() {
+                $templateCache.put(templateUrl,
+                   "<div class='alert alert-danger'>" +
+                   "<p class='text-center'>" +
+                   "Faild to load page. Please retry or contact us" +
+                   "</p>"+
+                   "</div>");
+            });
+        }
         if (rState !== undefined && 
-            $templateCache.get(rTemplateUrl)) {
+            !$templateCache.get(rTemplateUrl)) {
             $http({
                 method: "GET",
                 url: rTemplateUrl
@@ -244,23 +274,6 @@ angular.module("DisplayShop", [
                    "</div>");
             });
 
-        }
-        if ($templateCache.get(templateUrl) === undefined) {
-            $http({
-                method: "GET",
-                url: templateUrl
-            })
-            .success(function(data) {
-                $templateCache.put(templateUrl, data);
-            })
-            .error(function() {
-                $templateCache.put(templateUrl,
-                   "<div class='alert alert-danger'>" +
-                   "<p class='text-center'>" +
-                   "Faild to load page. Please retry or contact us" +
-                   "</p>"+
-                   "</div>");
-            });
         }
         if (!$scope.$state.includes(state, stateParams)) {
             $("#"+id).animate({opacity: 0}, 300, function() {
