@@ -1,0 +1,105 @@
+body {
+  position: relative;
+  padding-top: 40px;
+  background-color: #E5E5E5;
+}
+
+/* Narbar setting */
+
+body > .navbar {
+  font-size: 13px;
+}
+
+/* Change the brand */
+body > .navbar .brand {
+
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 20px;
+  float: left;
+  font-weight: bold;
+  color: white;
+}
+
+body > .navbar .nav-collapse {
+  float: right;
+}
+
+/* Jumbotron setting */
+.jumbotron {
+  position: relative;
+}
+
+.jumbotron img {
+  z-index: -1;
+  width: 100%;
+}
+
+#toTop {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: black;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+
+#toTop a {
+  padding: 0;
+  margin: 2px;
+  color: gray;
+}
+
+#toTop a:hover {
+  color: white;
+  text-decoration:none;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgb(242,242,242);
+}
+
+/* Responsive */
+
+/* Tablet to desktop */
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+
+  body > .navbar-fixed-top .brand {
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+
+  body > .navbar .nav-collapse {
+    float: none;
+  }
+
+  .jumbotron {
+    margin-top: -20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  .jumbotron {
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+
+  .footer {
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+}
+
+
+/* Phone */
+@media (max-width: 480px) {
+
+}

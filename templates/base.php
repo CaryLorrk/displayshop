@@ -12,20 +12,16 @@
     <link href="static/css/{{$state.current.name.split('.')[0]}}.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-    <script src="static/js/html5shiv.js"></script>
+    <script src="static/js/html5shiv.min.js"></script>
     <script src="static/js/respond.min.js"></script>
     <script src="static/js/es5-sham.min.js"></script>
     <script src="static/js/es5-shim.min.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link href="static/css/bootstrap-ie7.css" rel="stylesheet">
-    <![endif]-->
     <!--[if lte IE 7]>
-    <script src="static/json2.min.js"></script>
-    <link href="static/css/base-ie7.css" rel="stylesheet">
+    <script>
+      window.location.replace("old/index.php");
+    </script>
     <![endif]-->
-
-
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -99,5 +95,24 @@
     <script src="static/js/ui-bootstrap.min.js"></script>
     <script src="static/js/ui-router.min.js"></script>
     <script src="static/js/DisplayShop.js"></script>
+    <script>
+      function preload(images) {
+        if (document.images) {
+          var i = 0;
+          imageObjs = [];
+          for(i=0; i<=images.length-1; i++) {
+            imageObjs[i] = new Image();
+            imageObjs[i].src="static/img/"+images[i];
+          }
+        }
+      }
+      preload(['jumbotron-home.jpg',
+              'loading_page.gif',
+              'jumbotron-about.jpg',
+              'jumbotron-products.jpg',
+              'jumbotron-gallery.jpg',
+              'jumbotron-news.jpg',
+              'jumbotron-inquiry.jpg']);
+    </script>
   </body>
 </html>

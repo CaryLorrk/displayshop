@@ -1,0 +1,48 @@
+#content {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+#content .container .tabbale .tab-content {
+  padding: 0 20px;
+}
+
+#index img {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#content section {
+  margin: 20px 0;
+}
+
+#content .thumbnail:hover {
+  border-color: #0088cc;
+}
+
+#content .thumbnail img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+#content .thumbnail h4 {
+  text-align: center;
+}
+
+#content .small span {
+  display: inline-block;
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+#content .small img {
+  box-shadow: 5px 5px 5px #888888;
+}
+
+#content .small img:hover {
+  box-shadow: 10px 10px 5px #888888;
+}

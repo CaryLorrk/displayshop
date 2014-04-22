@@ -21,7 +21,7 @@
           <td>%s</td>
           <td>%s</td>
           <td>%s</td>
-          <td><a href="%s">Link</a></td>
+          <td><a href="%s" target="_blank">Link</a></td>
         </tr>
         ';
       printf($format, $body[$j]['event'], $body[$j]['location'],

@@ -1,10 +1,14 @@
-[
-    {
-        "id": "kube-system001", 
-        "title": ""
-    }, 
-    {
-        "id": "kube-system002", 
-        "title": ""
-    }
-]
+{
+    "id": "kube-system",
+    "text": "Kube System",
+    "items": [
+        {
+            "id": "kube-system001", 
+            "title": ""
+        }, 
+        {
+            "id": "kube-system002", 
+            "title": ""
+        }
+    ]
+}

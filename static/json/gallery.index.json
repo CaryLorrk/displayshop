@@ -1,6 +1,7 @@
 [
     {
-        "id": "Projects",
+        "id": "projects",
+        "text": "Projects",
         "subjects": [
             {
                 "id": "beauty-salon",
@@ -29,7 +30,8 @@
         ]
     },
     {
-        "id": "Sketches",
+        "id": "sketches",
+        "text": "Sketches",
         "subjects": [
             {
                 "id": "kupole-system",

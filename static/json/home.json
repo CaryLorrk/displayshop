@@ -1,0 +1,20 @@
+[
+    {
+        "href": "http://www.retailenvironments.org/",
+        "img": "static/img/thumbnails/index/index-1.jpg",
+        "caption": "A.R.E",
+        "target": "_blank"
+    },
+    {
+        "href": "/static/img/2014-catalog.pdf",
+        "img": "static/img/thumbnails/index/index-2.jpg",
+        "caption": "Catalog",
+        "target": "_blank"
+    },
+    {
+        "href": "#/youtube",
+        "img": "static/img/thumbnails/index/index-3.jpg",
+        "caption": "Youtube",
+        "target": "_self"
+    }
+]

@@ -18,11 +18,12 @@ function gallery_item($id, $title, $idx)
   $json_file = file_get_contents("static/json/gallery.".$tab.".json");
   $json_array=json_decode($json_file, true);
   echo "<div id=\"$tab\">";
-  echo "<div ng-init='itemsInit(".$json_file.")'>";
+  echo ("<h3>".$json_array['text']."</h3>");
+  echo "<div ng-init='itemsInit(".json_encode($json_array['items']).")'>";
   echo "<div class='row small'>";
-  for ($i = 0; $i < sizeof($json_array); $i++) {
-    $id = $json_array[$i]["id"];
-    $title = $json_array[$i]["title"];
+  for ($i = 0; $i < sizeof($json_array['items']); $i++) {
+    $id = $json_array['items'][$i]["id"];
+    $title = $json_array['items'][$i]["title"];
     
     echo gallery_item($id, $title, $i);
   }

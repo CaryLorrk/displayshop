@@ -1,18 +1,22 @@
-[
-    {
-        "id": "pillar-system001", 
-        "title": ""
-    }, 
-    {
-        "id": "pillar-system002", 
-        "title": ""
-    }, 
-    {
-        "id": "pillar-system003", 
-        "title": ""
-    }, 
-    {
-        "id": "pillar-system004", 
-        "title": ""
-    }
-]
+{
+    "id": "pillar-system",
+    "text": "Pillar System",
+    "items": [
+        {
+            "id": "pillar-system001", 
+            "title": ""
+        }, 
+        {
+            "id": "pillar-system002", 
+            "title": ""
+        }, 
+        {
+            "id": "pillar-system003", 
+            "title": ""
+        }, 
+        {
+            "id": "pillar-system004", 
+            "title": ""
+        }
+    ]
+}

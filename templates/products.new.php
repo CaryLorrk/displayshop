@@ -6,7 +6,7 @@ function products_new_item($id, $group, $title, $caption)
     <div class="col-sm-3">
       <div class="thumbnail">
         <a href="javascript:;" ng-click="jump_to_item({id: \'%2$s\', group: \'%5$s\'})">
-          <img src="%1$s" title="%2$s" alt="%3$s">
+          <img src="%1$s" title="%3$s" alt="%2$s">
         </a>
         <div class="caption">
           <h5>%4$s</h5>

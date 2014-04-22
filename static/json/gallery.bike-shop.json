@@ -1,82 +1,86 @@
-[
-    {
-        "id": "bike-shop031", 
-        "title": "Bike Shop - Acer HQ, Ocean88 cafe @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop032", 
-        "title": "Bike Shop \u2013 Pacific Cycle &amp; ORBEA @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop033", 
-        "title": "Bike Shop \u2013 Pacific Cycle &amp; ORBEA @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop036", 
-        "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop037", 
-        "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop038", 
-        "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop039", 
-        "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop001", 
-        "title": "Bike Shop - Mulan @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop002", 
-        "title": "Bike Shop - Mulan @ Taiwan<br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
-    }, 
-    {
-        "id": "bike-shop007", 
-        "title": "Bike Shop - MERIDA @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Retail"
-    }, 
-    {
-        "id": "bike-shop012", 
-        "title": "Bike shop - Leisure Taiwan @ Taiwan <br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop013", 
-        "title": "Bike shop - Leisure Taiwan @ Taiwan <br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
-    }, 
-    {
-        "id": "bike-shop015", 
-        "title": "Bike shop - Taipei Cycle @ Taiwan <br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
-    }, 
-    {
-        "id": "bike-shop016", 
-        "title": "Bike shop - Fuji Ton @ Taiwan <br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop019", 
-        "title": "Bike shop - Maga @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
-    }, 
-    {
-        "id": "bike-shop021", 
-        "title": "Bike Shop - GIANT @ Austria<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop022", 
-        "title": "Bike Shop - GIANT @ Taiwan<br>By Kupole System, Aluminum Slat Panel, Vivi-Ring<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop023", 
-        "title": "Bike Shop - GIANT @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop026", 
-        "title": "Bike Shop - BB17 @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }, 
-    {
-        "id": "bike-shop028", 
-        "title": "Bike Shop - Sport &amp; Leisure @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
-    }
-]
+{
+    "id": "bike-shop",
+    "text": "Bike Shop",
+    "items": [
+        {
+            "id": "bike-shop031", 
+            "title": "Bike Shop - Acer HQ, Ocean88 cafe @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop032", 
+            "title": "Bike Shop \u2013 Pacific Cycle &amp; ORBEA @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop033", 
+            "title": "Bike Shop \u2013 Pacific Cycle &amp; ORBEA @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop036", 
+            "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop037", 
+            "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop038", 
+            "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop039", 
+            "title": "Bike Shop \u2013 GIANT @ Spain<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop001", 
+            "title": "Bike Shop - Mulan @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop002", 
+            "title": "Bike Shop - Mulan @ Taiwan<br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
+        }, 
+        {
+            "id": "bike-shop007", 
+            "title": "Bike Shop - MERIDA @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Retail"
+        }, 
+        {
+            "id": "bike-shop012", 
+            "title": "Bike shop - Leisure Taiwan @ Taiwan <br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop013", 
+            "title": "Bike shop - Leisure Taiwan @ Taiwan <br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
+        }, 
+        {
+            "id": "bike-shop015", 
+            "title": "Bike shop - Taipei Cycle @ Taiwan <br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
+        }, 
+        {
+            "id": "bike-shop016", 
+            "title": "Bike shop - Fuji Ton @ Taiwan <br>By Kupole System <br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop019", 
+            "title": "Bike shop - Maga @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Shop Shelving, Retail"
+        }, 
+        {
+            "id": "bike-shop021", 
+            "title": "Bike Shop - GIANT @ Austria<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop022", 
+            "title": "Bike Shop - GIANT @ Taiwan<br>By Kupole System, Aluminum Slat Panel, Vivi-Ring<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop023", 
+            "title": "Bike Shop - GIANT @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop026", 
+            "title": "Bike Shop - BB17 @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }, 
+        {
+            "id": "bike-shop028", 
+            "title": "Bike Shop - Sport &amp; Leisure @ Taiwan<br>By Kupole System<br>Category: Store Fixture, Shop Display, Display Rack, Shopfitting, Modular Display, Window Display, Retail"
+        }
+    ]
+}

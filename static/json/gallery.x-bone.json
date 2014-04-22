@@ -1,10 +1,15 @@
-[
-    {
-        "id": "x-bone001", 
-        "title": ""
-    }, 
-    {
-        "id": "x-bone002", 
-        "title": ""
-    }
-]
+{
+    "id": "x-bone",
+    "text": "X-Bone",
+    "items": [
+        {
+            "id": "x-bone001", 
+            "title": ""
+        }, 
+        {
+            "id": "x-bone002", 
+            "title": ""
+        }
+    ]
+}
+

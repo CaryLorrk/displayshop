@@ -1,0 +1,13 @@
+#content {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+#content .container .tabbale .tab-content {
+	padding: 0 20px;
+}
+
+.ending {
+	text-align: center;
+}

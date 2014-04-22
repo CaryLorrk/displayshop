@@ -9,7 +9,7 @@ function gallery_index_subjects($id, $text)
           <img src="static/img/thumbnails/%1$s.jpg" title="%2$s" id=%1$s>
         </a>
         <div class="caption">
-          <h5>%2$s</h5>
+          <h4>%2$s</h4>
         </div>
       </div>
     </div>';
@@ -25,16 +25,17 @@ function gallery_index_subjects($id, $text)
   $json_array=json_decode(file_get_contents("static/json/gallery.index.json"), true);
   for ($i = 0; $i < sizeof($json_array); $i++) {
     $id = $json_array[$i]["id"];
+    $text = $json_array[$i]["text"];
     $subjects = $json_array[$i]["subjects"];
     echo "<section>";
-    echo "<h2>" . $id . "</h2>";
+    echo "<h2>" . $text . "</h2>";
     for ($j = 0; $j < sizeof($subjects); $j++) {
         $sub_id = $subjects[$j]["id"];
-        $text = $subjects[$j]["text"];
+        $sub_text = $subjects[$j]["text"];
       if ($j % 3 == 0){
         echo "<div class=\"row\">";
       }
-        echo gallery_index_subjects($sub_id, $text);
+        echo gallery_index_subjects($sub_id, $sub_text);
         if ($j % 3 == 2 || $j == sizeof($subjects) - 1) {
           echo "</div>";
         }

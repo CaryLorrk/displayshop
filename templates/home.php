@@ -1,10 +1,10 @@
 <?php
-  function home_item($href, $img, $caption)
+  function home_item($href, $img, $caption, $target)
   {
     $format = '
       <div class="col-sm-4">
         <div class="thumbnail">
-          <a href="%1$s">
+          <a href="%1$s" target="%4$s">
             <img src="%2$s" alt="%3$s">
           </a>
           <div class="caption">
@@ -12,7 +12,7 @@
           </div>
         </div>
       </div>';
-    return sprintf($format, $href, $img, $caption);
+    return sprintf($format, $href, $img, $caption, $target);
   }
 ?>
 <div id="home">
@@ -29,17 +29,22 @@
   </div>
   <div id="content">
     <div class="container">
-      <div class="row">
 <?php
-  $json_array=json_decode(file_get_contents("static/json/base.json"),true);
+  $json_array=json_decode(file_get_contents("static/json/home.json"),true);
   for ($i = 0; $i < sizeof($json_array); $i++) {
     $href = $json_array[$i]["href"];
     $img = $json_array[$i]["img"];
     $caption = $json_array[$i]["caption"];
-    echo home_item($href, $img, $caption);
+    $target = $json_array[$i]["target"];
+    if ($i % 3 == 0) {
+      echo "<div class=\"row\">";
+    }
+    echo home_item($href, $img, $caption, $target);
+    if ($i % 3 == 2 || $i == sizeof($json_array) - 1) {
+      echo "</div>";
+    }
   }
 ?>
-      </div>
     </div>
   </div>
 </div>

@@ -15,7 +15,7 @@ angular.module("DisplayShop", [
     return {
         enter: function(element, done) {
             element.css('opacity', 0);
-            $(element).animate({opacity: 1}, 300, done);
+            $(element).animate({opacity: 1}, 700, done);
         }
     };
 })
@@ -23,7 +23,7 @@ angular.module("DisplayShop", [
     return {
         removeClass: function(element, className, done) {
             element.css('opacity', 0);
-            $(element).animate({opacity: 1}, 300, done());
+            $(element).animate({opacity: 1}, 100, done());
         }
     };
 })
@@ -38,11 +38,15 @@ angular.module("DisplayShop", [
     $stateProvider
     .state("home", {
         url: "/",
-        templateUrl: "index.php/home"
+        templateUrl: function($stateParams) {
+            return "index.php/home";
+        }
     })
     .state("about", {
         url: "/about",
-        templateUrl: "index.php/about"
+        templateUrl: function($stateParams) {
+            return "index.php/about";
+        }
     })
     .state("about.list", {
         url: "/:tab",
@@ -53,7 +57,9 @@ angular.module("DisplayShop", [
     })
     .state("products", {
         url: "/products",
-        templateUrl: "index.php/products",
+        templateUrl: function ($stateParams){
+            return "index.php/products";
+        },
         controller: "ProductsController"
     })
     .state("products.new", {
@@ -68,12 +74,15 @@ angular.module("DisplayShop", [
     })
     .state("gallery", {
         url: "/gallery",
-        templateUrl: "index.php/gallery",
+        templateUrl: function($stateParams) {
+          return "index.php/gallery";
+        },
         controller: "GalleryController"
     })
     .state("gallery.index", {
          url: "/index",
-         templateUrl: "index.php/gallery/index"
+         templateUrl: function($stateParams) {
+             return "index.php/gallery/index";}
     })
     .state("gallery.list", {
         url: "/:tab",
@@ -83,7 +92,9 @@ angular.module("DisplayShop", [
     })
     .state("news", {
         url: "/news",
-        templateUrl: "index.php/news"
+        templateUrl: function($stateParams) {
+            return "index.php/news";
+        }
     })
     .state("news.list", {
         url: "/:tab",
@@ -94,20 +105,26 @@ angular.module("DisplayShop", [
     })
     .state("inquiry", {
         url: "/inquiry",
-        templateUrl: "index.php/inquiry",
+        templateUrl: function($stateParams) {
+            return "index.php/inquiry";
+        },
         controller: "InquiryController"
     })
     .state("contact", {
         url: "/contact",
-        templateUrl: "index.php/contact"
+        templateUrl: function($stateParams) {
+            return "index.php/contact";
+        }
     })
     .state("youtube", {
         url: "/youtube",
-        templateUrl: "index.php/youtube"
+        templateUrl: function($stateParams) {
+            return "index.php/youtube";
+        }
     });
 })
 .controller("LightBoxController", function($scope, $modalInstance,
-                                           items, idx) {
+                                           $timeout, items, idx) {
     $scope.items = items;
     $scope.idx = idx;
     $scope.path = [];
@@ -123,20 +140,20 @@ angular.module("DisplayShop", [
         if ($scope.idx > 0) {
             $scope.loadimg($scope.idx-1);
             var e = $("#lightbox-img-" + $scope.idx);
-            e.animate({opacity: 0}, 300, function() {
+            e.animate({opacity: 0}, 100, function() {
                 $scope.$apply(function() {
                     $scope.idx--;
                     $scope.loadimg($scope.idx);
                     $scope.loadimg($scope.idx-1);
                 });
             });
-        }
+        }        
     };
     $scope.next = function() {
         if ($scope.idx < $scope.items.length - 1) {
             $scope.loadimg($scope.idx+1);
             var e = $("#lightbox-img-" + $scope.idx);
-            e.animate({opacity: 0}, 300, function() {
+            e.animate({opacity: 0}, 100, function() {
                 $scope.$apply(function() {
                     $scope.idx++;
                     $scope.loadimg($scope.idx);
@@ -152,31 +169,8 @@ angular.module("DisplayShop", [
     $scope.loadimg($scope.idx+1);
     $scope.loadimg($scope.idx-1);
 })
-.controller("BaseController", function($scope, $location, $rootScope) {
-    $scope.preloadimg = {};
-    $scope.preload = {
-        'home': [
-            "static/img/jumbtorn-home.jpg"
-        ],
-        'about': [
-            "static/img/jumbtorn-about.jpg"
-        ],
-        'products': [
-            "static/img/jumbtorn-products.jpg"
-        ],    
-        'gallery': [
-            "static/img/jumbtorn-gallery.jpg"
-        ],
-        'news': [
-            "static/img/jumbtorn-news.jpg"
-        ],
-        'inquiry': [
-            "static/img/jumbtorn-inquiry.jpg"
-        ],
-        'contact': [
-            "static/img/jumbtorn-contact.jpg"
-        ]
-    };
+.controller("BaseController", function($scope, $location, $rootScope,
+                                       $http, $templateCache, $timeout) {
     $scope.navCollapsed = true;
     $scope.isActive = function(location) {
         return location === $location.path();
@@ -185,19 +179,80 @@ angular.module("DisplayShop", [
         $('html, body').animate({ scrollTop: 0 }, 'fast');
     };
     $rootScope.changeState = function(id, state, stateParams) {
-        if (!$scope.$state.includes(state, stateParams)) {
-            var i;
-            var src; 
-            if ($scope.preload[state] !== undefined) {
-                for (i = 0; i < $scope.preload[state].length; i++) {
-                   src = $scope.preload[state][i]; 
-                   if ($scope.preloadimg[src] === undefined) {
-                       $scope.preloadimg[src] = new Image();
-                       $scope.preloadimg[src].src = src;
-                   }
-                }
+        var redirection = {
+            'about': {
+                url: '/about/group',
+                state: 'about.group'
+            },
+            'products': {
+                url: '/products/new', 
+                state: 'products.group'
+            },
+            'gallery': {
+                url: '/gallery/index',
+                state: 'products.group'
+            },
+            'news': {
+                url: '/news/event',
+                state: 'news.event'
             }
+        };
+        var stateConfig = $rootScope.$state.get(state);
+        var templateUrl = stateConfig.templateUrl(stateParams);
+
+        var rState = redirection[state];
+        var rTemplateUrl  = "";
+        if (rState !== undefined) {
+            rTemplateUrl = $rootScope.$state.get(rState.state);
+        }
+        var checkReady = function() {
+            $timeout(function() {
+                if ($templateCache.get(templateUrl) === undefined ||
+                    (rState !== undefined &&
+                    $templateCache.get(rTemplateUrl) === undefined)) {
+                    checkReady();
+                }
+            },50, false);
+        };
+        if (rState !== undefined && 
+            $templateCache.get(rTemplateUrl)) {
+            $http({
+                method: "GET",
+                url: rTemplateUrl
+            })
+            .success(function(data) {
+                $templateCache.put(rTemplateUrl, data);
+            })
+            .error(function() {
+                $templateCache.put(rTemplateUrl,
+                   "<div class='alert alert-danger'>" +
+                   "<p class='text-center'>" +
+                   "Faild to load page. Please retry or contact us" +
+                   "</p>"+
+                   "</div>");
+            });
+
+        }
+        if ($templateCache.get(templateUrl) === undefined) {
+            $http({
+                method: "GET",
+                url: templateUrl
+            })
+            .success(function(data) {
+                $templateCache.put(templateUrl, data);
+            })
+            .error(function() {
+                $templateCache.put(templateUrl,
+                   "<div class='alert alert-danger'>" +
+                   "<p class='text-center'>" +
+                   "Faild to load page. Please retry or contact us" +
+                   "</p>"+
+                   "</div>");
+            });
+        }
+        if (!$scope.$state.includes(state, stateParams)) {
             $("#"+id).animate({opacity: 0}, 300, function() {
+                checkReady();
                 $scope.$state.go(state, stateParams);
             });
         }
@@ -493,7 +548,7 @@ angular.module("DisplayShop", [
             .error(function(data, status) {
                 if (status === 402) {
                     $scope.alert.text =
-                        "The Security code is wrong. Please enter the correct text.";
+                        "Security code is wrong. Please enter the correct text.";
                     $scope.alert.type = "alert-danger";
                     $scope.wrong_captcha = true;
                     $location.hash("content");
