@@ -251,7 +251,7 @@ angular.module("DisplayShop", [
                 $templateCache.put(templateUrl,
                    "<div class='alert alert-danger'>" +
                    "<p class='text-center'>" +
-                   "Faild to load page. Please retry or contact us" +
+                   "Failed to load page. Please retry or contact us" +
                    "</p>"+
                    "</div>");
             });
@@ -269,7 +269,7 @@ angular.module("DisplayShop", [
                 $templateCache.put(rTemplateUrl,
                    "<div class='alert alert-danger'>" +
                    "<p class='text-center'>" +
-                   "Faild to load page. Please retry or contact us" +
+                   "Failed to load page. Please retry or contact us" +
                    "</p>"+
                    "</div>");
             });
@@ -324,8 +324,7 @@ angular.module("DisplayShop", [
         {
             "id": "spotlight",
             "text": "Spotlight"
-        }
-    ];
+        }    ];
     $scope.kupoles = [
         {
             "id": "kupole",
