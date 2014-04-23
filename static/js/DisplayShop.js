@@ -64,7 +64,16 @@ angular.module("DisplayShop", [
     })
     .state("products.new", {
         url: "/new",
-        templateUrl: "index.php/products/new"
+        templateUrl: function($stateParams) {
+            return "index.php/products/new";
+        }
+    })
+    .state("products.search", {
+        url: "/search",
+        templateUrl: function($stateParams) {
+            return "index.php/products/search";
+        },
+        controller: "ProductsSearchController"
     })
     .state("products.list", {
         url: "/:tab",
@@ -251,7 +260,7 @@ angular.module("DisplayShop", [
                 $templateCache.put(templateUrl,
                    "<div class='alert alert-danger'>" +
                    "<p class='text-center'>" +
-                   "Failed to load page. Please retry or contact us" +
+                   "Failed to load page. Please retry or contact us." +
                    "</p>"+
                    "</div>");
             });
@@ -269,7 +278,7 @@ angular.module("DisplayShop", [
                 $templateCache.put(rTemplateUrl,
                    "<div class='alert alert-danger'>" +
                    "<p class='text-center'>" +
-                   "Failed to load page. Please retry or contact us" +
+                   "Failed to load page. Please retry or contact us." +
                    "</p>"+
                    "</div>");
             });
@@ -324,7 +333,8 @@ angular.module("DisplayShop", [
         {
             "id": "spotlight",
             "text": "Spotlight"
-        }    ];
+        }
+    ];
     $scope.kupoles = [
         {
             "id": "kupole",
@@ -391,6 +401,50 @@ angular.module("DisplayShop", [
         $rootScope.changeState('products-ui-view',
                                'products.list', {tab: item.group});
     };
+})
+.controller("ProductsSearchController", function($scope, $filter, $modal) {
+    $scope.items = [];
+    $scope.itemsInit = function(){
+        var groups = [
+           "kupole",
+           "kupole.500",
+           "kupole.600",
+           "kupole.700",
+           "kupole.800",
+           "kupole.900",
+           "kupole.others",
+           "pillar",
+           "super_joint",
+           "kube",
+           "x-bone",
+           "spotlight"
+        ];
+        var i;
+        var callback = function(data) {
+            $scope.$apply(function (){
+                $scope.items = $scope.items.concat(data);
+             });
+        };
+        for (i = 0; i < groups.length; ++i) {
+            $.getJSON("static/json/products."+groups[i]+".json", callback);
+        }
+    };
+    $scope.open_lightbox = function(idx) {
+        $modal.open({
+            templateUrl: "index.php/lightbox",
+            controller: "LightBoxController",
+            windowClass: 'lightbox',
+            resolve: {
+                items: function() {
+                    return $filter('filter')($scope.items, $scope.searchText);
+                },
+                idx: function() {
+                    return idx;
+                }
+            }
+        });
+    };
+    $scope.itemsInit();
 })
 .controller("GalleryController", function($scope, $rootScope, $modal) {
     $scope.items = {};

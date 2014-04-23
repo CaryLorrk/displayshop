@@ -20,6 +20,9 @@
         <li ng-repeat="group in groups" ng-class="{active: $state.includes('products.list', {tab: group.id})}">
           <a href="javascript:;" ng-click="changeState('products-ui-view', 'products.list', {tab: group.id})">{{group.text}}</a>
         </li>
+        <li ng-class="{active: $state.includes('products.search')}">
+          <a ui-sref="products.search">Search</a>
+        </li>
       </ul>
       <div class="tab-content">
         <div ui-view class="page-fade" id="products-ui-view"></div>
