@@ -402,8 +402,39 @@ angular.module("DisplayShop", [
                                'products.list', {tab: item.group});
     };
 })
+.filter('startFrom', function() {
+    return function(input, start) {
+        start = +start;
+        return input.slice(start);
+    };
+})
 .controller("ProductsSearchController", function($scope, $filter, $modal) {
     $scope.items = [];
+    $scope.searchText = "";
+    $scope.currentPage = 0;
+    $scope.pageSize = 5;
+    $scope.filteredItems = [];
+    $scope.checkSearch = function(str) {
+        if (str.toLowerCase().search(
+            $scope.searchText.toLowerCase()) === -1) {
+            return false;
+        }
+        return true;
+    };
+    $scope.search = function() {
+        $scope.currentPage = 0;
+        $scope.filteredItems = $filter('filter')($scope.items,
+                                                 $scope.searchText);
+    };
+    $scope.getNumberOfPages = function() {
+        return Math.ceil($scope.filteredItems.length/$scope.pageSize);
+    };
+    $scope.prev = function () {
+        $scope.currentPage = $scope.currentPage - 1;
+    };
+    $scope.next = function () {
+        $scope.currentPage = $scope.currentPage + 1;
+    };
     $scope.itemsInit = function(){
         var groups = [
            "kupole",
@@ -436,7 +467,7 @@ angular.module("DisplayShop", [
             windowClass: 'lightbox',
             resolve: {
                 items: function() {
-                    return $filter('filter')($scope.items, $scope.searchText);
+                    return $scope.filteredItems;
                 },
                 idx: function() {
                     return idx;
@@ -530,6 +561,18 @@ angular.module("DisplayShop", [
                 }
             }
         });
+    };
+    $scope.range = function (start, end) {
+        var ret = [];
+        if (!end) {
+            end = start;
+            start = 0;
+        }
+        var i;
+        for (i = start; i < end; i++) {
+            ret.push(i);
+        }
+        return ret;
     };
 })
 .controller("NewsController", function($scope) {
