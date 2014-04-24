@@ -20,7 +20,7 @@
       <section>
         <div class="row">
           <div class="col-sm-4">
-            <a href="javascript:;" ng-click="open_lightbox($index)">
+            <a href="javascript:;" ng-click="open_lightbox(currentPage*pageSize+$index)">
               <img ng-src="static/img/thumbnails/{{item.id}}.jpg" class="img-thumbnail" title="{{item.title}}" alt="{{item.id}}">
             </a>
           </div>
