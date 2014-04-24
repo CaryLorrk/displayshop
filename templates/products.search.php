@@ -37,7 +37,7 @@
       <div ng-bind-html="item.detail.join('')"></div>
       <hr>
     </div>
-    <div ng-if="getNumberOfPages() > 1" class="text-center">
+    <div ng-if="searchText.length && getNumberOfPages() > 1" class="text-center">
       <button class="btn btn-default" ng-disabled="currentPage == 0" ng-click="prev()">
         &larr;Previous
       </button>
