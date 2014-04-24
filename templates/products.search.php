@@ -16,7 +16,7 @@
     <div ng-show="searchText.length && filteredItems.length==0" class="alert alert-danger">
       <p>No result.</p>
     </div>
-    <div ng-if="searchText.length" ng-repeat="item in filteredItems | startFrom:currentPage*pageSize | limitTo: pageSize">
+    <div ng-if="searchText.length" ng-repeat="item in filteredItems | startFrom:currentPage*pageSize | limitTo: pageSize | orderBy:id">
       <section>
         <div class="row">
           <div class="col-sm-4">
