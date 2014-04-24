@@ -64,7 +64,16 @@ angular.module("DisplayShop", [
     })
     .state("products.new", {
         url: "/new",
-        templateUrl: "index.php/products/new"
+        templateUrl: function($stateParams) {
+            return "index.php/products/new";
+        }
+    })
+    .state("products.search", {
+        url: "/search",
+        templateUrl: function($stateParams) {
+            return "index.php/products/search";
+        },
+        controller: "ProductsSearchController"
     })
     .state("products.list", {
         url: "/:tab",
@@ -251,7 +260,7 @@ angular.module("DisplayShop", [
                 $templateCache.put(templateUrl,
                    "<div class='alert alert-danger'>" +
                    "<p class='text-center'>" +
-                   "Failed to load page. Please retry or contact us" +
+                   "Failed to load page. Please retry or contact us." +
                    "</p>"+
                    "</div>");
             });
@@ -269,7 +278,7 @@ angular.module("DisplayShop", [
                 $templateCache.put(rTemplateUrl,
                    "<div class='alert alert-danger'>" +
                    "<p class='text-center'>" +
-                   "Failed to load page. Please retry or contact us" +
+                   "Failed to load page. Please retry or contact us." +
                    "</p>"+
                    "</div>");
             });
@@ -324,7 +333,8 @@ angular.module("DisplayShop", [
         {
             "id": "spotlight",
             "text": "Spotlight"
-        }    ];
+        }
+    ];
     $scope.kupoles = [
         {
             "id": "kupole",
@@ -391,6 +401,81 @@ angular.module("DisplayShop", [
         $rootScope.changeState('products-ui-view',
                                'products.list', {tab: item.group});
     };
+})
+.filter('startFrom', function() {
+    return function(input, start) {
+        start = +start;
+        return input.slice(start);
+    };
+})
+.controller("ProductsSearchController", function($scope, $filter, $modal) {
+    $scope.items = [];
+    $scope.searchText = "";
+    $scope.currentPage = 0;
+    $scope.pageSize = 5;
+    $scope.filteredItems = [];
+    $scope.checkSearch = function(str) {
+        if (str.toLowerCase().search(
+            $scope.searchText.toLowerCase()) === -1) {
+            return false;
+        }
+        return true;
+    };
+    $scope.search = function() {
+        $scope.currentPage = 0;
+        $scope.filteredItems = $filter('filter')($scope.items,
+                                                 $scope.searchText);
+    };
+    $scope.getNumberOfPages = function() {
+        return Math.ceil($scope.filteredItems.length/$scope.pageSize);
+    };
+    $scope.prev = function () {
+        $scope.currentPage = $scope.currentPage - 1;
+    };
+    $scope.next = function () {
+        $scope.currentPage = $scope.currentPage + 1;
+    };
+    $scope.itemsInit = function(){
+        var groups = [
+           "kupole",
+           "kupole.500",
+           "kupole.600",
+           "kupole.700",
+           "kupole.800",
+           "kupole.900",
+           "kupole.others",
+           "pillar",
+           "super_joint",
+           "kube",
+           "x-bone",
+           "spotlight"
+        ];
+        var i;
+        var callback = function(data) {
+            $scope.$apply(function (){
+                $scope.items = $scope.items.concat(data);
+             });
+        };
+        for (i = 0; i < groups.length; ++i) {
+            $.getJSON("static/json/products."+groups[i]+".json", callback);
+        }
+    };
+    $scope.open_lightbox = function(idx) {
+        $modal.open({
+            templateUrl: "index.php/lightbox",
+            controller: "LightBoxController",
+            windowClass: 'lightbox',
+            resolve: {
+                items: function() {
+                    return $scope.filteredItems;
+                },
+                idx: function() {
+                    return idx;
+                }
+            }
+        });
+    };
+    $scope.itemsInit();
 })
 .controller("GalleryController", function($scope, $rootScope, $modal) {
     $scope.items = {};
@@ -476,6 +561,18 @@ angular.module("DisplayShop", [
                 }
             }
         });
+    };
+    $scope.range = function (start, end) {
+        var ret = [];
+        if (!end) {
+            end = start;
+            start = 0;
+        }
+        var i;
+        for (i = start; i < end; i++) {
+            ret.push(i);
+        }
+        return ret;
     };
 })
 .controller("NewsController", function($scope) {

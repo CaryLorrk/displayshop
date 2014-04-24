@@ -94,6 +94,13 @@ function product_new_view()
   $app->render('products.new.php');
 }
 
+$app->get('/products/search', 'product_search_view');
+function product_search_view()
+{
+  $app = Slim::getInstance();
+  $app->render('products.search.php');
+}
+
 $app->get('/products/:tab', 'product_list_view');
 function product_list_view($tab)
 {
