@@ -414,17 +414,16 @@ angular.module("DisplayShop", [
     $scope.currentPage = 0;
     $scope.pageSize = 5;
     $scope.filteredItems = [];
-    $scope.checkSearch = function(str) {
-        if (str.toLowerCase().search(
-            $scope.searchText.toLowerCase()) === -1) {
-            return false;
-        }
-        return true;
-    };
     $scope.search = function() {
         $scope.currentPage = 0;
         $scope.filteredItems = $filter('filter')($scope.items,
                                                  $scope.searchText);
+    };
+    $scope.highlightSearch = function(str) {
+        var re = new RegExp("("+$scope.searchText+")", "gi");
+        return str.replace(
+            re,
+            "<strong class='bg-warning'>$1</strong>");
     };
     $scope.getNumberOfPages = function() {
         return Math.ceil($scope.filteredItems.length/$scope.pageSize);

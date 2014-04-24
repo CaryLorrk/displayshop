@@ -27,14 +27,14 @@
           <div class="col-sm-8">
             <dl class="dl-horizontal" ng-repeat="dl in item.dl">
               <dt>{{dl.dt}}</dt>
-              <dd ng-repeat="dd in dl.dd" ng-class="{'bg-warning': checkSearch('{{dd}}')}">{{dd}}</dd>
+              <dd ng-repeat="dd in dl.dd" ng-bind-html="highlightSearch(dd)">{{dd}}</dd>
             </dl>
           </div>
         </div>
         <div class="description">
         </div>
       </section>
-      <div ng-bind-html="item.detail.join('')"></div>
+      <div ng-bind-html="highlightSearch(item.detail.join(''))"></div>
       <hr>
     </div>
     <div ng-if="searchText.length && getNumberOfPages() > 1" class="text-center">
